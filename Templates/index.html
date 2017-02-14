@@ -1,0 +1,12 @@
+{% extends '_partials/base.html' %}
+
+{% block content %}
+    <h2>Bands List</h2>
+
+    {% for band in bands %}
+      <div>
+        <h3><a href="{% url 'band' pk=band.pk %}">{{ band.name }}</a></h3>
+        <p> {{ band.description|truncatewords:10}}</p>
+      </div>
+    {% endfor %}
+{% endblock content %}
