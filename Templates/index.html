@@ -1,12 +1,24 @@
 {% extends '_partials/base.html' %}
 
 {% block content %}
+<h2>The Estes Park Mountain Music Festival is a Fundraiser for the Estes Park School District Music Program</h2>
+<h3>That music program includes the Elementary School Music Class, the Middle School Band and Choir, and High School Band and Choir, including the 2015 and 2016 1A state marching band champions.</h3>
+<p>
+  The Estes Park Mountain Music festival will be held on May 13th 2017 at the Estes Park Event Complex.<br>
+</p>
     <h2>Bands List</h2>
 
     {% for band in bands %}
       <div>
         <h3><a href="{% url 'band' pk=band.pk %}">{{ band.name }}</a></h3>
         <p> {{ band.description|truncatewords:10}}</p>
+      </div>
+    {% endfor %}
+    <h2>Our Sponsors</h2>
+    {% for sponsor in sponsors %}
+      <div>
+        <h3><a href="{% url 'sponsor' pk=sponsor.pk %}">{{ sponsor.name }}</a></h3>
+        <p> {{ sponsor.description|truncatewords:10}}</p>
       </div>
     {% endfor %}
 {% endblock content %}
