@@ -10,14 +10,14 @@
 
     {% for band in bands %}
       <div>
-        <h3><a href="{% url 'band' pk=band.pk %}">{{ band.name }}</a></h3>
+        <p><a href="{% url 'band' pk=band.pk %}">{{ band.name }}</a></p>
         <p> {{ band.description|truncatewords:10}}</p>
       </div>
     {% endfor %}
     <h2>Our Sponsors</h2>
     {% for sponsor in sponsors %}
       <div>
-        <h3><a href="{% url 'sponsor' pk=sponsor.pk %}">{{ sponsor.name }}</a></h3>
+        <p><a href="{% url 'sponsor' pk=sponsor.pk %}">{{ sponsor.name }}</a></p>
         <p> {{ sponsor.description|truncatewords:10}}</p>
       </div>
     {% endfor %}

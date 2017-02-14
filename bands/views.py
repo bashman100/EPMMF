@@ -4,16 +4,15 @@ from django.core.exceptions import PermissionDenied
 from django.contrib import messages
 from django.utils import timezone
 
-from .models import band
+from .models import band, sponsor
 
 
 # Create your views here.
 
 def index(request):
     bands = band.objects.all()
-    return render(request, 'index.html', {'bands': bands})
     sponsors = sponsor.objects.all()
-    return render(request, 'index.html', {'sponsors': sponsors})
+    return render(request, 'index.html', {'bands': bands, 'sponsors': sponsors})
 
 def band_details(request, pk):
     band = get_object_or_404(band, pk=pk)
