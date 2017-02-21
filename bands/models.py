@@ -5,6 +5,7 @@ from django.db import models
 class band(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
+    #short_description = models.CharField(blank=True, null=True, max_length=100)
     video = models.URLField(max_length=200, blank=True, null=True)
     website = models.URLField(max_length=200, blank=True, null=True)
 
