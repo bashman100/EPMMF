@@ -10,7 +10,7 @@ from .models import band, sponsor
 # Create your views here.
 
 def index(request):
-    bands = band.objects.all()
+    bands = band.objects.all().order_by('priority').reverse()
     sponsors = sponsor.objects.all()
     return render(request, 'index.html', {'bands': bands, 'sponsors': sponsors})
 
