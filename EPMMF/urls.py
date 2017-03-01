@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from bands.views import index, band_details, sponsor_details
+from bands.views import index, band_details, sponsor_details, our_story
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index, name='home'),
     url(r'^band/(?P<pk>\d+)/$', band_details, name='band'),
     url(r'^sponsor/(?P<pk>\d+)/$', sponsor_details, name='sponsor'),
+    url(r'^ourstory/', our_story, name='ourstory')
 ]

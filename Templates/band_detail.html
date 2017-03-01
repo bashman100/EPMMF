@@ -4,7 +4,7 @@
     <img src="{{ MEDIA_URL }}/{{band.image}}">
     {% endif %}
     <h3>
-      {% if band.website %}<a href="{{ band.website }}"> {% endif %} {{ band.name }} {% if band.website %}</a> {% endif %}
+      {% if band.website %}<a href="{{ band.website }}" class="name"> {% endif %} {{ band.name }} {% if band.website %}</a> {% endif %}
     </h3>
     <p>{{ band.description }}</p>
     {% if band.video %}

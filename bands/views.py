@@ -14,6 +14,9 @@ def index(request):
     sponsors = sponsor.objects.all()
     return render(request, 'index.html', {'bands': bands, 'sponsors': sponsors})
 
+def our_story(request):
+    return render(request, 'our_story.html')
+
 def band_details(request, pk):
     bandx = get_object_or_404(band, pk=pk)
     return render(request, 'band_detail.html', {'band': bandx})

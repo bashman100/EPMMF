@@ -1,0 +1,47 @@
+{% extends '_partials/base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+    <div id="slideShowContainer">
+
+        <div id="slideShow">
+
+        	<ul>
+                <li><img src='{% static 'img/carasel/160813_Amundson_0159.JPG' %}' width="100%" alt="Band" /></li>
+                <li><img src='{% static 'img/carasel/160813_Amundson_1238.JPG' %}' width="100%" alt="Band" /></li>
+                <li><img src='{% static 'img/carasel/160813_Amundson_1259.JPG' %}' width="100%" alt="Band" /></li>
+                <li><img src='{% static 'img/carasel/160813_Amundson_1278.JPG' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161031_093545.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161031_093933.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161031_213310.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161031_213703.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161031_214304.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161104_191531.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/20161207_192127.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/DSC_1304-XL.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/DSC_1318-XL.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/DSC_1321-XL.jpg' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/IMG_4318 (1).JPG' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/IMG_4322 (1).JPG' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/IMG_4327 (1).JPG' %}' width='100%' alt='Band' /></li>
+                <li><img src='{% static 'img/carasel/unnamed-1.jpg' %}' width='100%' alt='Band' /></li>
+
+
+
+            </ul>
+
+        </div>
+
+        <a id="nextLink" href="#"><<</a>
+
+    </div>
+    <div>
+
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/jquery.rotate.js"></script>
+    <script src="{% static "js/script.js" %}"></script>
+{% endblock content %}
