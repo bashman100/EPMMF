@@ -8,11 +8,10 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 """
 
 import os
-
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
+import sys
+sys.path.append('/opt/bitnami/apps/django/django_projects/EPMMF')
+os.environ.setdefault("PYTHON_EGG_CACHE", "/opt/bitnami/apps/django/django_projects/EPMMF/egg_cache")
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "EPMMF.settings")
-
+from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
