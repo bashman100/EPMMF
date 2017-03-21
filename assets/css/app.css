@@ -1,7 +1,7 @@
 /* Global*/
 body{
   color: #222;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.6;
   margin: 0;
   background-size: contain;
@@ -10,8 +10,24 @@ body{
   background-blend-mode: darken;
   background-color: #ccc;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
   line-height: 1.2;
+  font-family: sans-serif;
+}
+.list p{
+  font-size: 1.5em
+}
+.top {
+  font-size: 1.75em
+}
+.list p.sponsor{
+  font-size: 1em
+}
+.website {
+  font-size: 1em;
+}
+.intro {
+  font-size: 1em
 }
 dt{
   border-bottom: 1px dotted #999;

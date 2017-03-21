@@ -9,7 +9,7 @@ class band(models.Model):
     short_description = models.CharField(blank=True, null=True, max_length=100)
     video = models.URLField(max_length=200, blank=True, null=True)
     website = models.URLField(max_length=200, blank=True, null=True)
-    #image = models.ImageField('Bio Image', upload_to='bioimg', null=True, blank=True)
+    #image = models.URLField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.name
