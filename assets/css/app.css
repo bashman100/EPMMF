@@ -78,8 +78,7 @@ iframe{
 /* nav*/
 nav{
   margin-bottom: 5px;
-  padding-bottom: 27%;
-  padding-top: 23%;
+  padding-bottom: 35%;
 }
 nav a.head{
   font-size: 1em;
@@ -94,6 +93,11 @@ a.title{
   font-size: 3em;
   color: #222;
   font-weight: bold;
+}
+div.title_cont {
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg);
 }
 /* Specific */
 .menu{
@@ -223,4 +227,18 @@ a#nextLink{
   word-wrap: break-word;
   width: 100%;
   text-align: center;
+}
+.container_top {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 73%;
+  padding: 25px 20px;
+  margin-bottom: 50px;
+  position: relative;
+  word-wrap: break-word;
+  width: 100%;
+  text-align: left;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg);
 }
