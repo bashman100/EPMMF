@@ -94,11 +94,6 @@ a.title{
   color: #222;
   font-weight: bold;
 }
-div.title_cont {
-  -ms-transform: rotate(20deg); /* IE 9 */
-  -webkit-transform: rotate(20deg); /* Safari */
-  transform: rotate(20deg);
-}
 /* Specific */
 .menu{
   float: right;
@@ -233,7 +228,7 @@ a#nextLink{
   margin: 0 auto;
   max-width: 73%;
   padding: 25px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 8%;
   position: relative;
   word-wrap: break-word;
   width: 100%;
