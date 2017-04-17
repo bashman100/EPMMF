@@ -1,0 +1,11 @@
+{% extends '_partials/base.html' %}
+
+{% block content %}
+{% for sponsor in sponsors %}
+  <div class='list'>
+    <h3><a href="{% url 'sponsor' pk=sponsor.pk %}">{{ sponsor.name }}</a></h3>
+    <a href="{% url 'sponsor' pk=sponsor.pk %}"><p class='shortdesc'>{{ sponsor.description|truncatewords:20 }}</p></a>
+    <a href="{{ sponsor.website }}">Visit their website here</a>
+  </div>
+{% endfor %}
+{% endblock content %}

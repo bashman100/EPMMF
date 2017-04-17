@@ -24,3 +24,12 @@ def band_details(request, pk):
 def sponsor_details(request, pk):
     sponsorx = get_object_or_404(sponsor, pk=pk)
     return render(request, 'sponsor_detail.html', {'sponsor': sponsorx})
+
+def bands(request):
+    bands = band.objects.all().order_by('priority')
+    return render(request, 'bands.html', {'bands': bands})
+
+
+def sponsors(request):
+    sponsors = sponsor.objects.all()
+    return render(request, 'sponsors.html', {'sponsors': sponsors})

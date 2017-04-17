@@ -40,6 +40,9 @@ dd{
   margin-left: 0;
   margin-right: 0;
 }
+p.shortdesc{
+  line-height: 1.25em;
+}
 /* Buttons */
 .button, .button:visited{
   font-size: 1.5em;
