@@ -26,5 +26,4 @@ urlpatterns = [
     url(r'^ourstory/', our_story, name='ourstory'),
     url(r'^bands/', bands, name='bands'),
     url(r'^sponsors/', sponsors, name='sponsors'),
-
 ]
