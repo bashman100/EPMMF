@@ -1,7 +1,7 @@
 {% extends '_partials/base.html' %}
 {% block content %}
     {% if band.image %}
-    <img src="/{{ band.image.url }}">
+    <img src="/{{ band.image.url }}" alt="{{ band.name }}'s website">
     {% endif %}
     <h3>
       {% if band.website %}<a href="{{ band.website }}" class="name"> {% endif %} {{ band.name }} {% if band.website %}</a> {% endif %}
